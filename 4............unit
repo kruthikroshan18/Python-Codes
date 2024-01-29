@@ -1,0 +1,22 @@
+import tkinter as tk
+n1=tk.Tk()
+n1.title("Add two numbers")
+b1=tk.Label(n1, text="Enter number 1:")
+b1.grid(row=0,column=0)
+b2=tk.Label(n1,text="Enter number 2:")
+b2.grid(row=1,column=0)
+t1=tk.Entry(n1)
+t2=tk.Entry(n1)
+t1.grid(row=0,column=1)
+t2.grid(row=1,column=1)
+def add():
+    x=int(t1.get())
+    y=int(t2.get())
+    result=x+y
+    
+    
+b3=tk.Button(n1,text="Add",height=2,width=12,command=add)
+b3.grid()
+
+
+n1.mainloop()
