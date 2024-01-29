@@ -8,6 +8,7 @@ smtp = smtplib.SMTP('smtp.gmail.com', 587)
 
 # Identify yourself to the server
 smtp.ehlo()
+#hiii
 
 # Start encryption
 smtp.starttls()
